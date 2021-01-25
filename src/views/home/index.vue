@@ -4,44 +4,44 @@
       <!-- logo -->
       <div class="logo" :class="{logo_callspe:isCollapse}"></div>
       <!-- 侧边导航栏 -->
-       <el-menu
-      default-active="2"
-      class="el-menu-vertical-demo"
-      background-color="#002033"
-      text-color="#fff"
-      active-text-color="#ffd04b"
-      :collapse="isCollapse"
-      :collapse-transition='false'
+      <el-menu
+        default-active="2"
+        class="el-menu-vertical-demo"
+        background-color="#002033"
+        text-color="#fff"
+        active-text-color="#ffd04b"
+        :collapse="isCollapse"
+        :collapse-transition="false"
       >
-      <el-menu-item index="1">
-        <i class="el-icon-s-home"></i>
-        <span slot="title">首页</span>
-      </el-menu-item>
-       <el-menu-item index="2">
-        <i class="el-icon-document"></i>
-        <span slot="title">内容管理</span>
-      </el-menu-item>
-       <el-menu-item index="3">
-        <i class="el-icon-picture"></i>
-        <span slot="title">素材管理</span>
-      </el-menu-item>
-       <el-menu-item index="4">
-        <i class="el-icon-s-promotion"></i>
-        <span slot="title">发布文章</span>
-      </el-menu-item>
-       <el-menu-item index="5">
-        <i class="el-icon-s-comment"></i>
-        <span slot="title">评论管理</span>
-      </el-menu-item>
-       <el-menu-item index="6">
-        <i class="el-icon-present"></i>
-        <span slot="title">粉丝管理</span>
-      </el-menu-item>
-       <el-menu-item index="7">
-        <i class="el-icon-setting"></i>
-        <span slot="title">个人设置</span>
-      </el-menu-item>
-    </el-menu>
+        <el-menu-item index="1">
+          <i class="el-icon-s-home"></i>
+          <span slot="title">首页</span>
+        </el-menu-item>
+        <el-menu-item index="2">
+          <i class="el-icon-document"></i>
+          <span slot="title">内容管理</span>
+        </el-menu-item>
+        <el-menu-item index="3">
+          <i class="el-icon-picture"></i>
+          <span slot="title">素材管理</span>
+        </el-menu-item>
+        <el-menu-item index="4">
+          <i class="el-icon-s-promotion"></i>
+          <span slot="title">发布文章</span>
+        </el-menu-item>
+        <el-menu-item index="5">
+          <i class="el-icon-s-comment"></i>
+          <span slot="title">评论管理</span>
+        </el-menu-item>
+        <el-menu-item index="6">
+          <i class="el-icon-present"></i>
+          <span slot="title">粉丝管理</span>
+        </el-menu-item>
+        <el-menu-item index="7">
+          <i class="el-icon-setting"></i>
+          <span slot="title">个人设置</span>
+        </el-menu-item>
+      </el-menu>
     </el-aside>
     <el-container>
       <el-header>
@@ -96,17 +96,18 @@ export default {
   top: 0;
   .el-aside {
     background-color: #002033;
-    .logo{
+    .logo {
       width: 100%;
       height: 60px;
-     background:#002244 url('../../assets/images/logo_admin.png') no-repeat center/140px auto;
+      background: #002244 url("../../assets/images/logo_admin.png") no-repeat
+        center/140px auto;
     }
-    .logo_callspe{
-        //  background:#002244 url('../../assets/images/logo_admin_01.png') no-repeat center/40px auto;
-      background-image: url('../../assets/images/logo_admin_01.png');
+    .logo_callspe {
+      //  background:#002244 url('../../assets/images/logo_admin_01.png') no-repeat center/40px auto;
+      background-image: url("../../assets/images/logo_admin_01.png");
       background-size: 40px auto;
     }
-    .el-menu{
+    .el-menu {
       border-right: none;
     }
   }
@@ -132,8 +133,8 @@ export default {
       }
     }
   }
-  .el-main{
-    background:url('../../assets/images/welcome.jpg') no-repeat center/contain;
+  .el-main {
+    background: url("../../assets/images/welcome.jpg") no-repeat center/contain;
   }
 }
 </style>
